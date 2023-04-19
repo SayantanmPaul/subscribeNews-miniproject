@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="/global.css" rel="stylesheet">
+</head>
+<body>
+    <div class="flex h-screen bg-cover bg-center overflow-hidden" style="background-image: url(/public/image1.jpg);">
+        <div class="backdrop-blur-sm h-screen w-screen absolute z-0"></div>
+        <div class="m-auto bg-white lg:w-auto w-[86%] relative flex flex-row overflow-hidden z-10">
+          <div class="hidden lg:block">
+            <img src='/public/image1.jpg' alt="image" width="550"/>
+          </div>
+          <div class="absolute bottom-16 left-16 lg:block hidden">
+            <h1 style="font-family: 'Josefin Sans', sans-serif;" class="text-4xl text-center text-white font-bold">It never hurts to keep<br>looking for sunshine . . .</h1>
+          </div>
+          <div class="flex flex-col justify-center gap-4 lg:p-7 lg:py-0 p-5 py-16">
+            <div>
+              <h1 style="font-family: 'Poppins', sans-serif;" class="text-left lg:text-3xl text-2xl lg:leading-10 font-bold">Join Our Newsletter</h1>
+            </div>
+            <div>
+              <p style="font-family: 'Poppins', sans-serif;" class="text-[15px]">
+                Never miss an update, sign up FREE to receive actionable<br>insights, you can unsubscribe anytime :)
+              </p>
+            </div>
+            <form action="/" method="POST">
+              <div class="flex flex-col gap-2 py-4">
+                <input type="text" name="fullname" placeholder="Fullname" style="font-family: 'Poppins', sans-serif;" class="outline-none mt-2" />
+                <div class="w-full h-[2px] bg-black"></div>
+                <input type="text" name="email" placeholder="Email ID" style="font-family: 'Poppins', sans-serif;" class="outline-none mt-2" />
+                <div class="w-full h-[2px] bg-black"></div>
+              </div>
+              <div class="my-8">
+                <button type="submit" class="w-full font-semibold text-[18px] text-white bg-black py-2 rounded-sm" style="font-family: 'Poppins', sans-serif;">Subscribe now</button>
+              </div>
+            </form>
+            <button type="refresh" class="absolute top-0 right-0 lg:p-6 p-4">
+              <img src='/public/iconcross.png' alt="cross" width="200" class="lg:w-10 w-8" />
+            </button>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
